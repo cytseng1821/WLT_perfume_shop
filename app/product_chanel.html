@@ -1,0 +1,112 @@
+---
+title: d’Perfume | CHANEL系列產品列表
+layout: ./app/layout.ejs
+engine: ejs
+current: product_chanel
+---
+
+<!-- Probuct Series Navigation -->
+<div class="bg-primary">
+    <div class="container">
+        <div class="row d-none d-md-flex">
+            <div class="col-12">
+                <ul class="nav font-size-lg" aria-label="Product Series Navigation">
+                    <li class="nav-item">
+                        <a href="product_chanel.html" class="active nav-link text-white">CHANEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link text-white">Jo Malone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_curology.html" class="nav-link text-white">Curology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_dior.html" class="nav-link text-white">Dior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_chloe.html" class="nav-link text-white">Chloe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_zara.html" class="nav-link text-white">ZARA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content of Product_CHANEL Page-->
+<main class="container pt-10 pt-md-20 pb-10 pb-md-15">
+    <h2 class="d-none">CHANEL Series</h2>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="products_chanel_page1" role="tabpanel" aria-labelledby="products_chanel_pageItem1">
+            <h2 class="d-none">CHANEL Series - Page1</h2>
+            <ul class="row list-unstyled">
+                <li class="col-6 col-md-3">
+                    <div class="card"> <!-- mt-7 mt-md-14 -->
+                        <a href="product_chanel1.html" class="products-img-link">
+                            <img class="card-img-top img-fluid img-cover img-products-square img-position-left" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index4.jpg" alt="the picture of product_JoMalone6">
+                        </a>
+                        <h3 class="card-title font-size-xl font-weight-medium mt-0h mb-0">CHANEL N°5</h3>
+                        <h4 class="card-subtitle mt-0h mt-md-0 mb-0">CHANEL</h4>
+                        <p class="card-text mb-0">NT$1,380<span class="d-inline-block text-secondary ml-2">NT$1,580</span></p>
+                        <div class="d-flex">
+                            <!-- Button trigger modal (#addToWishlistModal) -->
+                            <a href="#addToCart" class="card-link"  role="button" data-toggle="modal" data-target="#addToWishlistModal">
+                                <span class="material-icons align-middle">favorite</span>
+                            </a>
+                            <!-- Button trigger modal (#addToCartModal) -->
+                            <a href="#addToWishlist" class="card-link" role="button" data-toggle="modal" data-target="#addToCartModal">
+                                <span class="material-icons align-middle">shopping_cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="products_chanel_page2" role="tabpanel" aria-labelledby="products_chanel_pageItem2">
+            <h2>CHANEL Series - Page2</h2>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-11 mt-md-19">
+        <div class="list-group flex-row list-unstyled font-size-lg" id="list-tab" role="tablist" aria-label="Page navigation of products_chanel_series">
+            <a href="#products_chanel_page1" class="list-group-item list-group-item-action list-group-item-primary-light-outline active" id="products_chanel_pageItem1" data-toggle="list" role="tab" aria-controls="products_chanel_page1">1</a>
+            <a href="#products_chanel_page2" class="list-group-item list-group-item-action list-group-item-primary-light-outline" id="products_chanel_pageItem2" data-toggle="list" role="tab" aria-controls="products_chanel_page2">2</a>
+        </div>
+    </div>
+</main>
+<!-- Modal (#addToWishlistModal) -->
+<div class="modal fade" id="addToWishlistModal" tabindex="-1" role="dialog" aria-labelledby="addToWishlistModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content align-items-center">
+            <h2 class="text-primary font-size-lg font-weight-medium py-4" id="addToWishlistModalLabel">已加入我的收藏</h2>
+        </div>
+    </div>
+</div>
+<!-- Modal (#addToCartModal) -->
+<div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content align-items-center">
+            <h2 class="text-primary font-size-lg font-weight-medium py-4" id="addToCartModalLabel">已加入購物車</h2>
+        </div>
+    </div>
+</div>
+<!-- Additional Section: Subscribe -->
+<section class="bg-subscribe bg-cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <h2 class="text-secondary font-size-3xl">記得<br>
+                    訂閱以獲取更多資訊！
+                </h2>
+                <form action="product_chanel.html">
+                    <div class="input-group mt-5">
+                        <input type="mail" class="form-control form-control-subscribe font-weight-medium" placeholder="Your email address" name="mail">
+                        <div class="input-group-append">
+                            <input type="submit" class="btn-subscribe btn btn-primary font-weight-medium" role="button" value="Subscribe">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

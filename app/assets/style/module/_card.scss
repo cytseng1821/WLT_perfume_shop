@@ -1,0 +1,21 @@
+.card {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    &-img-top {
+        border-radius: 0;
+    }
+    &-subtitle {
+        font-size: $font-size-base;
+        font-weight: $font-weight-light;
+    }
+    &-text {
+        font-weight: $font-weight-light;
+    }
+    &-link {
+        font-weight: $font-weight-medium;
+    }
+    &-link + &-link {
+        margin-left: 0.5rem;
+    }
+}

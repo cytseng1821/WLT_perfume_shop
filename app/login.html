@@ -1,0 +1,94 @@
+---
+title: d’Perfume | 會員登入
+layout: ./app/layout.ejs
+engine: ejs
+current: login
+---
+
+<!-- Probuct Series Navigation -->
+<div class="bg-primary">
+    <div class="container">
+        <div class="row d-none d-md-flex">
+            <div class="col-12">
+                <ul class="nav font-size-lg" aria-label="Product Series Navigation">
+                    <li class="nav-item">
+                        <a href="product_chanel.html" class="nav-link text-white">CHANEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link text-white">Jo Malone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_curology.html" class="nav-link text-white">Curology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_dior.html" class="nav-link text-white">Dior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_chloe.html" class="nav-link text-white">Chloe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_zara.html" class="nav-link text-white">ZARA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content of Login Page-->
+<div class="container">
+    <div class="card pt-10 pt-md-20 pb-20"> <!-- pb-md: 106px -->
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <img class="card-img-top img-fluid img-cover img-login-square" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/login1.jpg" alt="the picture of login page">
+            </div>
+            <div class="col-12 col-md-4 align-self-md-center mt-7 mt-md-0">
+                <form action="member.html" class="needs-validation" novalidate>
+                    <h2 class="card-title font-size-3xl">Login</h2>
+                    <div class="form-group mt-3 mb-0">
+                        <label for="account" class="form-label mb-1">帳號</label>
+                        <input id="account" type="text" class="form-control pl-3" placeholder="email@example.com" name="account" required>
+                        <div class="invalid-feedback">
+                            Account is required.
+                        </div>
+                    </div>
+                    <div class="form-group mt-5 mb-0">
+                        <label for="password" class="form-label mb-1">密碼</label>
+                        <input id="password" type="password" class="form-control pl-3" placeholder="Password" name="password" required>
+                        <div class="invalid-feedback">
+                            Password is required.
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-9">
+                        <a href="#forget_password.html" class="card-link font-weight-medium">忘記密碼</a>
+                        <div class="d-flex">
+                            <a href="#sign_up.html" class="btn-login btn btn-outline-primary">註冊</a>
+                            <!-- <a href="member.html" class="btn-login btn btn-primary ml-2">登入</a> -->
+                            <input type="submit" class="btn-login btn btn-primary ml-2" value="登入">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap's Example JavaScript for Form Validation -->
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+</script>

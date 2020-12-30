@@ -1,0 +1,74 @@
+.nav {
+    margin-left: -0.875rem; // for .nav at the middle (Product Series Navigation)
+    &-link {
+        position: relative;
+        padding: 0.875rem 0.875rem; // for .nav at the middle (Product Series Navigation)
+        background: transparent;
+        border-radius: 0.25rem;
+        color: $secondary;
+        &:hover {
+            color: darken($secondary, 15%);
+            /* reversed version */
+            // background: $secondary;
+            // color: $white;
+        }
+        &.text-white {
+            &:hover {
+                background: darken($primary, 7.5%);
+                /* reversed version */
+                // background: $white;
+                // color: $primary !important;
+            }
+        }
+        &.active {
+            background: darken($primary, 7.5%);
+        }
+    }
+    /*---- customed nav element ----*/
+    &-icon {
+        background: transparent;
+        color: $primary;
+        padding: 0;
+        &-decoration {
+            position: absolute;
+            left: 15px;
+            top: -6px;
+            height: 13px;
+            background: $primary;
+            border-radius: 7px;
+            color: $white;
+            padding: 0 4px;
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+    &-member {
+        margin-left: 0;
+        .nav-link {
+            border-radius: 0;
+            padding: 0;
+            @include media-breakpoint-up(md, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)) {
+                padding-top: 1.5rem;
+            }
+        }
+        .nav-item.active {
+            .nav-link {
+                span {
+                    border-bottom: 2px solid $primary;
+                }
+            }
+            // .nav-link {
+            //     position: relative;
+            //     &::after {
+            //         position: absolute;
+            //         left: 0;
+            //         right: 0;
+            //         bottom: 0;
+            //         height: 2px;
+            //         color: $primary;
+            //         // z-index: 1;
+            //     }
+            // }
+        }
+    }
+}

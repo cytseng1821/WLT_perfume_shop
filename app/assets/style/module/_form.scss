@@ -1,0 +1,47 @@
+.form {
+    /*---- customed form-control ----*/
+    &-control {
+        padding: 0.625rem;
+        &-subscribe {
+            border-width: 2px; // same as input-group-append's margin-left
+            border-color: $primary;
+            height: 60px;
+            padding: 0;
+            padding-left: 1rem;
+            color: $secondary;
+            font-weight: $font-weight-medium;
+        }
+        &-addToCart {
+            border-width: 1px;
+            border-color: $primary;
+            height: 50px;
+            padding: 0;
+            padding-left: 1rem;
+            color: $secondary;
+        }
+    }
+}
+.input-group {
+    &-append {
+        margin-left: -2px; // same as form-control-subscribe's border-width
+    }
+}
+.custom-select {
+    padding: 0.5rem 0.625rem;
+    /*---- customed custom-select ----*/
+    &-address {
+        width: calc(50% - 5px); // 5px * 2 is the width of the gutter between them
+        @include media-breakpoint-up(md, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)) {
+            width: calc(50% - 15px); // 15px is the width of the container's gutter
+        }
+    }
+    &-address ~ &-address {
+        margin-left: 0px; // because parent element is justify-content-between
+        @include media-breakpoint-up(md, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)) {
+            margin-left: 8px; // because parent element is justify-content-start
+        }
+    }
+}
+textarea {
+    padding: 0.625rem;
+}

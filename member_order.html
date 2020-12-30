@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>d’Perfume | 訂單查詢</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-md">
+                    <h1 class="logo navbar-brand">
+                        <a href="index.html">
+                            <img src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfume.png" alt="the logo of d’Perfume">
+                            d’Perfume
+                        </a>
+                    </h1>
+                    <a href="cart.html" class="nav-link nav-icon text-secondary d-md-none ml-auto mr-5">
+                        <span class="material-icons align-middle d-block">shopping_cart</span>
+                        <span class="nav-icon-decoration">3</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="material-icons align-middle">menu</span>
+                        <span class="material-icons align-middle d-none">close</span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-secondary font-size-lg mr-md-n4">
+                            <li class="nav-item">
+                                <a href="product.html" class="nav-link">
+                                    <span class="material-icons align-middle d-none d-md-inline">store</span>
+                                    <span class="align-middle">Product</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-none d-md-block">
+                                <a href="login.html" class="nav-link">
+                                    <span class="material-icons align-middle d-none d-md-inline">person</span>
+                                    <span class="align-middle">Log in</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="wishlist.html" class="nav-link">
+                                    <span class="material-icons align-middle d-none d-md-inline">favorite</span>
+                                    <span class="align-middle">Wishlist</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a href="blog.html" class="nav-link">
+                                    <!-- <span class="material-icons align-middle d-none d-md-inline"></span> -->
+                                    <span class="align-middle">Blog</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a href="contact.html" class="nav-link">
+                                    <!-- <span class="material-icons align-middle d-none d-md-inline"></span> -->
+                                    <span class="align-middle">Contact</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-md-none">
+                                <a href="login.html" class="nav-link">
+                                    <span class="material-icons align-middle d-none d-md-inline">person</span>
+                                    <span class="align-middle">Log in</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="cart.html" class="nav-link d-none d-md-block">
+                                    <span class="material-icons align-middle d-none d-md-inline">shopping_cart</span>
+                                    <span class="align-middle">Cart(3)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    
+<!-- Probuct Series Navigation -->
+<div class="bg-primary">
+    <div class="container">
+        <div class="row d-none d-md-flex">
+            <div class="col-12">
+                <ul class="nav font-size-lg" aria-label="Product Series Navigation">
+                    <li class="nav-item">
+                        <a href="product_chanel.html" class="nav-link text-white">CHANEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link text-white">Jo Malone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_curology.html" class="nav-link text-white">Curology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_dior.html" class="nav-link text-white">Dior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_chloe.html" class="nav-link text-white">Chloe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_zara.html" class="nav-link text-white">ZARA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content of Member Page-->
+<main>
+    <div class="container py-10 pt-md-20 pb-md-15">
+        <div class="row position-relative">
+            <div class="col-12 col-md-2 text-gray-dark">
+                <h2 class="d-none d-md-block font-size-lg font-weight-medium">會員中心</h2>
+                <ul class="nav-member nav justify-content-between justify-content-md-start flex-md-column font-weight-medium mt-0 mt-md-1" aria-label="Member Operation Navigation">
+                    <li class="nav-item">
+                        <a href="member.html" class="nav-link">
+                            <span class="d-inline-block">會員資料修改</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="member_order.html" class="nav-link">
+                            <span class="d-inline-block">訂單查詢</span>
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="member_apply.html" class="nav-link">
+                            <span class="d-inline-block">退／換貨申請</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-10 bg-gray-table bg-md-white mt-10 mt-md-0">
+                <div class="row bg-white d-none d-md-block">
+                    <div class="col-12">
+                        <h3 class="border-bottom border-gray-label text-black font-size-base font-weight-medium pb-2">訂單查詢</h3>
+                    </div>
+                </div>
+                <div class="row no-gutters table-order font-size-sm">
+                    <div class="col-12 table-order-gap d-md-none border-bottom border-gray-control"></div>
+                    <div class="col-6 col-md-12 thead-order bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-9">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單編號</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單成立時間</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單狀態</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>出貨日期</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>發票</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="th-order th-order-btn">
+                                            <span>退貨服務</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="th-order">
+                                            <span>查詢明細</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 tbody-order bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-9">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="td-order">
+                                            201212001392
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="td-order">
+                                            2020/12/12
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            2-備貨中
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            -
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            -
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="td-order td-order-btn">
+                                            <a href="member_apply.html" class="btn-apply btn btn-gray-control font-size-sm">
+                                                <span>申請退貨</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="td-order">
+                                            <a href="#order1_detail">
+                                                <span class="material-icons align-middle text-gray-label md-18 md-md-24">search</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 table-order-gap d-md-none border-bottom border-gray-control"></div>
+                    <div class="col-6 col-md-12 thead-order d-md-none bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-9">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單編號</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單成立時間</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單狀態</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>出貨日期</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>發票</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="th-order th-order-btn">
+                                            <span>退貨服務</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="th-order">
+                                            <span>查詢明細</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 tbody-order bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-9">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="td-order">
+                                            201111000932
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="td-order">
+                                            2020/11/11
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            3-已出貨
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            2020/11/14
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            無
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="td-order td-order-btn">
+                                            <a href="member_apply.html" class="disabled btn-apply btn btn-gray-control font-size-sm">
+                                                <span>已過鑑賞</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="td-order">
+                                            <a href="#order2_detail">
+                                                <span class="material-icons align-middle text-gray-label md-18 md-md-24">search</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 table-order-gap d-md-none border-bottom border-gray-control"></div>
+                    <div class="col-6 col-md-12 thead-order d-md-none bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-9">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單編號</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單成立時間</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>訂單狀態</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>出貨日期</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="th-order">
+                                            <span>發票</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="th-order th-order-btn">
+                                            <span>退貨服務</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="th-order">
+                                            <span>查詢明細</span>
+                                            <span class="d-md-none">：</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-12 tbody-order bg-white">
+                        <div class="row no-gutters">
+                            <div class="col-12 col-md-9">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="td-order">
+                                            201010000736
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 tr-order">
+                                        <div class="td-order">
+                                            2020/10/10
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            3-已出貨
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            2020/10/11
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-2 tr-order">
+                                        <div class="td-order">
+                                            無
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3">
+                                <div class="row no-gutters">
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="td-order td-order-btn">
+                                            <a href="member_apply.html" class="disabled btn-apply btn btn-gray-control font-size-sm">
+                                                <span>已過鑑賞</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 tr-order">
+                                        <div class="td-order">
+                                            <a href="#order3_detail">
+                                                <span class="material-icons align-middle text-gray-label md-18 md-md-24">search</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 table-order-gap d-md-none"></div>
+                </div>
+                <table class="table d-none text-gray-label font-size-sm">
+                    <thead>
+                        <tr>
+                            <th>訂單編號</th>
+                            <th>訂單成立時間</th>
+                            <th>訂單狀態</th>
+                            <th>出貨日期</th>
+                            <th>發票</th>
+                            <th>退貨服務</th>
+                            <th>查詢明細</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>201212001392</td>
+                            <td>2020/12/12</td>
+                            <td>2-備貨中</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <a href="member_apply.html" class="btn btn-gray-control border-0 font-size-sm">
+                                    <span>申請退貨</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#order1_detail">
+                                    <span class="material-icons align-middle text-gray-label">search</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201111000932</td>
+                            <td>2020/11/11</td>
+                            <td>3-已出貨</td>
+                            <td>2020/11/14</td>
+                            <td>無</td>
+                            <td>
+                                <a href="member_apply.html" class="disabled btn btn-gray-control border-0 font-size-sm">
+                                    <span>已過鑑賞</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#order2_detail">
+                                    <span class="material-icons align-middle text-gray-label">search</span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>201010000736</td>
+                            <td>2020/10/10</td>
+                            <td>3-已出貨</td>
+                            <td>2020/10/11</td>
+                            <td>無</td>
+                            <td>
+                                <a href="member_apply.html" class="disabled btn btn-gray-control border-0 font-size-sm">
+                                    <span>已過鑑賞</span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#order3_detail">
+                                    <span class="material-icons align-middle text-gray-label">search</span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+
+    <footer class="footer">
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="navbar">
+                            <div class="d-flex flex-grow-1 justify-content-between justify-content-md-start align-items-center">
+                                <a href="index.html" class="logo navbar-brand">
+                                    <img src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/d’Perfumewhite.png" alt="the logo of d’Perfume">
+                                    d’Perfume
+                                </a>
+                                <span class="navbar-text text-white font-size-sm ml-5 py-8 py-md-0">© 2020. All Rights Reserved.</span>
+                            </div>
+                            <ul class="navbar-nav d-none d-md-flex flex-row font-size-lg mr-n5">
+                                <li class="nav-item">
+                                    <a href="product.html" class="nav-link text-white">
+                                        Product
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="blog.html" class="nav-link text-white">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link text-white">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+
+</html>

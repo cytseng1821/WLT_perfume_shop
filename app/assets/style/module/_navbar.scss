@@ -1,0 +1,54 @@
+.navbar {
+    padding: 0;
+    .nav-link {
+        padding: 1.75rem 1.25rem; // for .navbar-nav at the bottom (footer)
+    }
+    .nav-icon { /*---- customed nav element ----*/
+        padding: 0;
+    }
+    &-toggler {
+        width: 72px;
+        height: 56px;
+        padding: 0;
+        .material-icons {
+            box-sizing: border-box;
+            height: 56px;
+            border: 1px solid transparent;
+            color: $secondary;
+            font-size: 56px;
+        }
+    }
+    &-collapse {
+        flex-grow: 0;
+        &.collapsing, &.show {
+            .nav-link {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 0;
+                background: $secondary;
+                border: 1px solid $secondary;
+                border-top-color: $white;
+                color: $white;
+                @include media-breakpoint-up(md) {
+                    background: transparent;
+                    border: none;
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    // navbar-expand-$breakpoint in "bootstrap/navbar" line 145
+    // @include media-breakpoint-up() in "bootstrap/mixins/breakpoints" line 58
+    // original setting is "justify-content: flex-start;" in order to replace the setting of .navbar, "justify-content: space-between;"
+    &-expand-md {
+        @include media-breakpoint-up(md) {
+            justify-content: space-between;
+            .navbar-nav {
+                .nav-link {
+                    padding: 1rem; // for .navbar-nav at the top
+                }
+            }
+        }
+    }
+}

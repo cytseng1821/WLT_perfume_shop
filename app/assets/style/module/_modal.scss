@@ -1,0 +1,12 @@
+.modal {
+    &-dialog {
+        max-width: 165px;
+        @include media-breakpoint-up(md, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)) {
+            max-width: 540px;
+        }
+    }
+    &-content {
+        border: none;
+        border-radius: 0.25rem;
+    }   
+}

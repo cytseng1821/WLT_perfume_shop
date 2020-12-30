@@ -1,0 +1,108 @@
+---
+title: d’Perfume | CHANEL N°5 (CHANEL系列產品1)
+layout: ./app/layout.ejs
+engine: ejs
+current: product_chanel1
+---
+
+<!-- Probuct Series Navigation -->
+<div class="bg-primary">
+    <div class="container">
+        <div class="row d-none d-md-flex">
+            <div class="col-12">
+                <ul class="nav font-size-lg" aria-label="Product Series Navigation">
+                    <li class="nav-item">
+                        <a href="product_chanel.html" class="active nav-link text-white">CHANEL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="nav-link text-white">Jo Malone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_curology.html" class="nav-link text-white">Curology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_dior.html" class="nav-link text-white">Dior</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_chloe.html" class="nav-link text-white">Chloe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product_zara.html" class="nav-link text-white">ZARA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content of Product_CHANEL1_CHANEL N°5 Page-->
+<main class="product-content container py-10 pt-md-20 pb-md-15">
+    <div class="card">
+        <div class="row position-relative">
+            <div class="col-12 col-md-8">
+                <img class="card-img-top img-fluid img-cover img-product-main" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product1.jpg" alt="the picture of product_CHANEL1">
+            </div>
+            <div class="col-12 col-md-4 md-description">
+                <h2 class="card-title font-size-3xl mt-7 mt-md-0">CHANEL N°5</h2>
+                <p class="card-text font-size-lg font-weight-light">N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+                <p class="font-size-lg font-weight-light">NT$4,980</p>
+                <form action="product_chanel1.html" class="mt-3">
+                    <div class="input-group">
+                        <select class="form-control form-control-addToCart" name="product-chanel1-num">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <div class="input-group-append">
+                            <!-- Button trigger modal (#addToCartModal) -->
+                            <!-- <input type="submit" class="btn-addToCart btn btn-primary" role="button" value="加入購物車" data-toggle="modal" data-target="#addToCartModal"> -->
+                            <button type="button" class="btn-addToCart btn btn-primary" data-toggle="modal" data-target="#addToCartModal">加入購物車</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Modal (#addToCartModal) start -->
+                <div class="modal fade" id="addToCartModal" tabindex="-1" role="dialog" aria-labelledby="addToCartModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content align-items-center">
+                            <h2 class="text-primary font-size-lg font-weight-medium py-4" id="addToCartModalLabel">已加入購物車</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal (#addToCartModal) end -->
+                <!-- Button trigger modal (#addToWishlistModal) -->
+                <a href="addToWishlistModal" class="card-link d-inline-block mt-2" role="button" data-toggle="modal" data-target="#addToWishlistModal">
+                    <span class="material-icons align-middle">favorite</span>
+                    <span class="align-middle text-black">加入我的收藏</span>
+                </a>
+                <!-- Modal (#addToWishlistModal) start -->
+                <div class="modal fade" id="addToWishlistModal" tabindex="-1" role="dialog" aria-labelledby="addToWishlistModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content align-items-center">
+                            <h2 class="text-primary font-size-lg font-weight-medium py-4" id="addToWishlistModalLabel">已加入我的收藏</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal (#addToWishlistModal) end -->
+                <h3 class="card-subtitle font-weight-medium mt-10 mt-md-20">商品購買須知</h3>
+                <p class="card-text mt-2">產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主。<br>
+                    商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。<br>
+                    D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。
+                </p>
+                <h3 class="card-subtitle font-weight-medium mt-5">退換貨須知</h3>
+                <p class="card-text mt-2">依《消費者保護法》的規定，於全站購物皆享有商品到貨【七日猶豫期】（含例假日）之權益。若收到的商品有任何問題，可於猶豫期內申請退貨。</p>
+            </div>
+            <div class="col-12 col-md-8">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="card-img-top img-fluid img-cover img-product-tall mt-10 mt-md-7" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product2.jpg" alt="the picture of product_CHANEL1">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img class="card-img-top img-fluid img-cover img-product-tall mt-4 mt-md-7" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product3.jpg" alt="the picture of product_CHANEL1">
+                    </div>
+                    <div class="col-12">
+                        <img class="card-img-top img-fluid img-cover img-product-medium mt-4 mt-md-7" src="https://hexschool.github.io/webLayoutTraining1st/perfume-week6/product1.jpg" alt="the picture of product_CHANEL1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
